@@ -42,7 +42,7 @@ _.extend(exports, {
 			app.on('message', function(action, data){
 				if (action === 'search') {
 					console.log(data.Title);
-					app.setContent('detail', data);
+					app.pushView('detail', data);
 				}
 			});
 		});
